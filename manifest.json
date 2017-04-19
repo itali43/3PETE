@@ -1,0 +1,24 @@
+{
+  //manifest
+  "manifest_version": 2,
+  "name": "3PETE",
+  "version": "0.0.2",
+"content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.2.1.js", "content.js"]
+    }
+  ],
+
+"browser_action": {
+  "default_icon": "icon.png"
+},
+"background": {
+  "scripts": ["background.js"]
+}
+
+
+}
+
